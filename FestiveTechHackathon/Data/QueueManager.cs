@@ -18,11 +18,11 @@ namespace FestiveTechHackathon.Data
         }
 
         public void InsertMessage(SignupModel signup)
-        {           
+        {
             // Create Queue Client for interaction with Storage Accounts queues
-           QueueClient queueClient = new QueueClient(connectionString, queueName);
-          
-          if (queueClient.Exists())
+            QueueClient queueClient = new QueueClient(connectionString, queueName);
+
+            if (queueClient.Exists())
             {
                 string messageJson;
                 messageJson = JsonConvert.SerializeObject(signup);
@@ -33,5 +33,5 @@ namespace FestiveTechHackathon.Data
         }
     }
 
-    
+
 }
