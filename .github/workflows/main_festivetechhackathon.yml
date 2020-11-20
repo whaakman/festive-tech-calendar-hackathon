@@ -22,9 +22,11 @@ jobs:
 
     - name: Build with dotnet
       run: dotnet build --configuration Release
+      working-directory: FestiveTechHackathon
 
     - name: dotnet publish
       run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+      working-directory: FestiveTechHackathon
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
@@ -33,3 +35,4 @@ jobs:
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_0b443ff3103a4439af1266fd470fc12a }}
         package: ${{env.DOTNET_ROOT}}/myapp 
+        working-directory: FestiveTechHackathon
