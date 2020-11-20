@@ -31,11 +31,10 @@ else
 
 @code {
     private bool submitted = false;
+    private bool isSubmitting;
     private string submitMessage;
-    bool isSubmitting;
     private SignupModel signupModel = new SignupModel();
     private QueueManager queueManager = new QueueManager();
-
 
      async Task OnSubmit()
     {
