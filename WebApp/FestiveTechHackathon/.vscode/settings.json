@@ -1,5 +1,0 @@
-{
-    "appService.preDeployTask": "publish-release",
-    "appService.deploySubpath": "bin\\Release\\net5.0\\publish",
-    "appService.defaultWebAppToDeploy": "/subscriptions/69dc95d8-087e-4810-910e-526a1844217b/resourceGroups/rg-festive-tech-calendar-hackathon/providers/Microsoft.Web/sites/festivetechhackathon"
-}
