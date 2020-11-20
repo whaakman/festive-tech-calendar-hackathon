@@ -3,9 +3,11 @@
 
 
 <center><h1>Festive Tech Calendar Hackathon</h1></center>
-<center><img src="img/calendar.jpg"></center>
+<center><img src="img/calendar.jpg"></center><br /><br />
 
-<EditForm Model="@signupModel" OnValidSubmit="@OnSubmit">
+@if (submitted == false)
+{
+    <EditForm Model="@signupModel" OnValidSubmit="@OnSubmit">
 
     <DataAnnotationsValidator />
     <ValidationSummary />
@@ -17,25 +19,24 @@
     Description: <InputTextArea id="description" @bind-Value="signupModel.Description" /><br />
 
     <button type="submit" disabled=@isSubmitting>Submit</button>
+    </EditForm>
+
     <br />
+}
+else
+{
     <p>@submitMessage</p>
-</EditForm>
+}
+
 
 @code {
+    private bool submitted = false;
 
     private string submitMessage;
     bool isSubmitting;
-    
     private SignupModel signupModel = new SignupModel();
-
     private QueueManager queueManager = new QueueManager();
 
-    private void HandleValidSubmit()
-    {
-       queueManager.InsertMessage(signupModel);
-       submitMessage = "Thank you for submitting!";
-
-    }
 
      async Task OnSubmit()
     {
@@ -52,6 +53,7 @@
         finally
         {
             isSubmitting = false;
+            submitted = true;
         }
     }
 
