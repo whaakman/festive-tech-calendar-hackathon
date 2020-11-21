@@ -6,32 +6,10 @@
     <h1> 🎄 Festive Tech Calendar Hackathon</h1>
 </center>
 <br><br>
-<div class="container">
-    <div class="center">
-        <div class="window">
-            <div class="santa">
-                <div class="head">
-                    <div class="face">
-                        <div class="redhat">
-                            <div class="whitepart"></div>
-                            <div class="redpart"></div>
-                            <div class="hatball"></div>
-                        </div>
-                        <div class="eyes"></div>
-                        <div class="beard">
-                            <div class="nouse"></div>
-                            <div class="mouth"></div>
-                        </div>
-                    </div>
-                    <div class="ears"></div>
-                </div>
-                <div class="body"></div>
-            </div>
-        </div>
-        <div class="message"></div>
-        <br />
-        <br />
-        @if (submitted == false)
+<div id="parent">
+  <div id="wide">
+
+@if (submitted == false)
         {
 
             <EditForm Model="@signupModel" OnValidSubmit="@OnSubmit">
@@ -59,6 +37,33 @@
         {
             <p>@submitMessage</p>
         }
+        </div>
+
+<div id="narrow">
+        <div class="window">
+            <div class="santa">
+                <div class="head">
+                    <div class="face">
+                        <div class="redhat">
+                            <div class="whitepart"></div>
+                            <div class="redpart"></div>
+                            <div class="hatball"></div>
+                        </div>
+                        <div class="eyes"></div>
+                        <div class="beard">
+                            <div class="nouse"></div>
+                            <div class="mouth"></div>
+                        </div>
+                    </div>
+                    <div class="ears"></div>
+                </div>
+                <div class="body"></div>
+            </div>
+        </div>
+        <div class="message"></div>
+        <br />
+        <br />
+        
     </div>
 </div>
 
