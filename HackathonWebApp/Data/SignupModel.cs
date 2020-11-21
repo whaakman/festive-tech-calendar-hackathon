@@ -14,9 +14,6 @@ namespace WebAppHackathon.Data
     
     [Required]
     public string SolutionUri { get; set; }
-    
-    [Required]
-    public string Description { get; set; }
     }
 }
 
