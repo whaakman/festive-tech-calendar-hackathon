@@ -26,9 +26,18 @@ h4 {
   text-align: center;
 }
 
+img {
+  display: block;
+  margin: 0 auto;
+  max-width: 40%;
+  border-radius: 10px;
+  text-align: right;
+}
+
 p {
   text-align: left;
 }
+
 a,
 .btn-link {
   color: #0366d6;
@@ -92,20 +101,14 @@ button:hover {
   top: 0.5rem;
 }
 
-
 #parent {
   display: flex;
 }
 #narrow {
-  width: 400px;
-  background: lightblue;
-  /* Just so it's visible */
+  width: 60%;
 }
 #wide {
   flex: 1;
-  /* Grow to rest of container */
-  background: lightgreen;
-  /* Just so it's visible */
 }
 
 /*
