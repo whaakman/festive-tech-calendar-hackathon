@@ -2,8 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
 name: Build and deploy ASP.Net Core app to Azure Web App - festivetechhackathon
-env:
- WorkingDirectoryHackathonWebApp: HackathonWebApp
+
 on:
   push:
     branches:
@@ -23,11 +22,11 @@ jobs:
 
     - name: Build with dotnet
       run: dotnet build --configuration Release
-      working-directory: $WorkingDirectoryHackathonWebApp
+      working-directory: HackathonWebApp
 
     - name: dotnet publish
       run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
-      working-directory: $WorkingDirectoryHackathonWebApp
+      working-directory: HackathonWebApp
 
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
@@ -36,4 +35,4 @@ jobs:
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_0b443ff3103a4439af1266fd470fc12a }}
         package: ${{env.DOTNET_ROOT}}/myapp 
-        working-directory: $WorkingDirectoryHackathonWebApp
+        working-directory: HackathonWebApp
