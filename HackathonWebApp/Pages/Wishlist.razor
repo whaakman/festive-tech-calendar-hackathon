@@ -5,29 +5,38 @@
     <h1> 🎄 Santa's App </h1>
     <br />
     <br />
-    <p>The code for the App can be found in <a href="https://github.com/whaakman/festive-tech-santa-wishlist">this GitHub Repository</a>.</p>
+    <p>The code for the App can be found in <a href="https://github.com/whaakman/festive-tech-santa-wishlist"
+            target="blank" class="red">this GitHub Repository</a>.</p>
     <br />
     <p>Santa and his elves have created the Wishlist app for children to use and send in their requests.
-        The App is build in Blazor Server and leverages a storage account to store the wish lists as a txt file. After publishing the App
+        The App is build in Blazor Server and leverages a storage account to store the wish lists as a txt file. After
+        publishing the App
         and storage account you need to configure the connectiong string to point the App to the storage account.
-        This is done through using the App Settings on Azure App Services or environment variables if you're going for a Dockerfile.
+        This is done through using the App Settings on Azure App Services or environment variables if you're going for a
+        Dockerfile.
         The App requires two environment variables:</p>
-        <li>connectionString</li>
-        <li>storageContainerName</li>
-        <p><br>The storage container with the provided name will automatically be created after submitting the wish list.<br>
-        </p>
-        <p>Adding a present is done through providing the required items (Family Name, Name, Present, Motivation). By clicking <strong>"Add Present"</strong> the present will be added to the list.</p>
-        <img src="img/example1.png">
+    <li>connectionString</li>
+    <li>storageContainerName</li>
+    <p><br>The storage container with the provided name will automatically be created after submitting the wish
+        list.<br>
+    </p>
+    <p>Adding a present is done through providing the required items (Family Name, Name, Present, Motivation). By
+        clicking <strong>"Add Present"</strong> the present will be added to the list.</p>
+    <img src="img/example1.png">
     <p>
-        Once you are happy with the list you can submit your wish list and send it to santa by click on <strong>"Send the list to Santa"</strong>. Wait for the message to pop up and Santa has recieved your list!</p>
-        <img src="img/example2.png">
+        Once you are happy with the list you can submit your wish list and send it to santa by click on <strong>"Send
+            the list to Santa"</strong>. Wait for the message to pop up and Santa has recieved your list!</p>
+    <img src="img/example2.png">
     <p>
-        The message will be stored in a text file in the previously provided blob container. The name of the file is prefixed
-        by the Family Name and a random GUID is added to ensure all files are unique. Santa has yet to implement the backend system
+        The message will be stored in a text file in the previously provided blob container. The name of the file is
+        prefixed
+        by the Family Name and a random GUID is added to ensure all files are unique. Santa has yet to implement the
+        backend system
         to process the wish lists. He better hurry! 😁
     </p>
     <img src="img/example3.png">
-    <p>You can very the workings of the app by opening the text file and read the contents. It should be a json string similar to the image below.</p>
+    <p>You can very the workings of the app by opening the text file and read the contents. It should be a json string
+        similar to the image below.</p>
     <img src="img/example4.png">
 
 </center>
