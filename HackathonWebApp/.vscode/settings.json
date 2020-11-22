@@ -1,5 +1,22 @@
 {
     "appService.preDeployTask": "publish-release",
     "appService.deploySubpath": "bin\\Release\\net5.0\\publish",
-    "appService.defaultWebAppToDeploy": "/subscriptions/69dc95d8-087e-4810-910e-526a1844217b/resourceGroups/rg-festive-tech-calendar-hackathon/providers/Microsoft.Web/sites/festivetechhackathon"
+    "appService.defaultWebAppToDeploy": "/subscriptions/69dc95d8-087e-4810-910e-526a1844217b/resourceGroups/rg-festive-tech-calendar-hackathon/providers/Microsoft.Web/sites/festivetechhackathon",
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#83a81e",
+        "activityBar.activeBorder": "#c9e9f5",
+        "activityBar.background": "#83a81e",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#c9e9f5",
+        "activityBarBadge.foreground": "#15202b",
+        "statusBar.background": "#617d16",
+        "statusBar.foreground": "#e7e7e7",
+        "statusBarItem.hoverBackground": "#83a81e",
+        "titleBar.activeBackground": "#617d16",
+        "titleBar.activeForeground": "#e7e7e7",
+        "titleBar.inactiveBackground": "#617d1699",
+        "titleBar.inactiveForeground": "#e7e7e799"
+    },
+    "peacock.color": "#617d16"
 }
