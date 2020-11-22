@@ -1,0 +1,57 @@
+@page "/requirements"
+
+<center>
+
+    <h1> 🎄 Santa's App </h1>
+    <br />
+    <br />
+    <h4>Use Case </h4>
+    <p>Santa is going digital! Santa is looking to automate some things and instead of going through
+        all the paperwork
+        he decided that families can now send in their wish list digitally. Santa and his elves created a
+        website for
+        families to create their wishlist and send it to Santa. No more post stamps, no more lists being lost
+        through
+        mail and no more papercuts!! </p>
+    <h5><em>But Santa needs your help.</em></h5>
+    <h4>The Problem</h4>
+    <p> The website needs to be published around the world. Even though they have written the code, they are not sure
+        about the best way to deploy and scale this. During initial testing with Santa’s helpers around the
+        world they
+        quickly ran into performance challenges as well as compliance requirements.</P>
+    <h4>The Solution</h4>
+    <p>The magnificent code is hosted at <strong><a href="https://github.com/whaakman/festive-tech-santa-wishlist"
+                target="blank" class="free">https://github.com/whaakman/festive-tech-santa-wishlist</a></strong> and
+        consist
+        of
+        a
+        Blazor <strong><em>(server)</em></strong> Web App. The Web App allows for the creation of a wish list and upon
+        creation writes
+        the wish
+        list to blob storage <strong><em>(Azure Storage Account)</em></strong>. </p>
+    <p>The application takes a connection string <em>(“connectionString”)</em> and a Blob container name
+        <em>(“storageContainerName”)</em>. </p>
+    <h4>The Requirements </h4>
+    <p>This is where your help comes in! Santa and his elves have compiled a list of requirements.
+        Santa is not looking
+        to change the code of the application, therefor code changes are prohibited. </p>
+    <h6><strong>Website hosting and scaling </strong></h6>
+    <p>The solution needs to be deployed on Microsoft Azure. The Website needs to scale keep up with the growing number
+        of children wanting to send in their wish list.</p>
+    <h6><strong>Personalization</strong></h6>
+    <p>For each country Santa would like to personalize the page. As he is not looking for code changes or
+        implementing
+        multi tenancy. </p>
+    <h6><strong>Data compliance</strong></h6>
+    <p>Data needs to be protected and preferably stored in the country that the children are living in.</p>
+    <p>Remember, we’re not looking for code changes in the website itself. Santa is perfectly fine with deploying
+        resources for each country as long as it doesn’t happen manually and turn into a repetitive point and click
+        adventure in the Azure Portal. </p>
+
+    <p>Once you have your deployment automated and documented your solution to the problem you can submit through the <a href="/participate">participate page</a></p>
+
+</center>
+<div class="container">
+    <div class="center">
+    </div>
+</div>
