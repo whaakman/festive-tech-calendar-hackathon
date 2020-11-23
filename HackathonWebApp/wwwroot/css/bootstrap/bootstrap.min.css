@@ -149,12 +149,12 @@ sup {
   top: -0.5em;
 }
 a {
-  color: #007bff;
+  color: #857979;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #0056b3;
+  color: #857979;
   text-decoration: underline;
 }
 a:not([href]):not([tabindex]) {
