@@ -14,12 +14,6 @@ namespace HackathonManagement
     
     [Required]
     public string SolutionUri { get; set; }
-
-    public string ScoreCreativity { get; set; }
-
-    public string ScoreTechnology { get; set; }
-
-    public string ScoreWriteUp { get; set; }
     }
 }
 

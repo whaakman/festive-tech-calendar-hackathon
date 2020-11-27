@@ -30,16 +30,11 @@
                     <td><a href="https://twitter.com/@signUp.TwitterAccount">@signUp.TwitterAccount</a></td>
                     <td>@signUp.Email</td>
                     <td><a href="@signUp.SolutionUri">@signUp.SolutionUri</a></td>
-                    <td><input type="text" name="scoreCreativity" @bind-value="signUp.ScoreCreativity"></td>
-                    <td><input type="text" name="scoreTechnology" @bind-value="signUp.ScoreTechnology"></td>
-                    <td><input type="text" name="scoreWriteUp" @bind-value="signUp.ScoreWriteUp"></td>
-                    <td><button @onclick="submitScores">Add Score</button></td>
                 </tr>
             }
         </tbody>
     </table>
 </div>
-
     </div>
 </div>
 
@@ -50,12 +45,6 @@
     protected override async Task OnInitializedAsync()
     {
         signUpList = await contributions.GetSignUpsFromFunction();
-    }
-
-    private void submitScores()
-    {
-        // handle submit
-
     }
     
 }
