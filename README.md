@@ -1,1 +1,2 @@
 # festive-tech-calendar-hackathon
+![Azure Festive Tech Hackathon Main Site](https://github.com/whaakman/festive-tech-calendar-hackathon/workflows/Build%20and%20deploy%20ASP.Net%20Core%20app%20to%20Azure%20Web%20App%20-%20festivetechhackathon/badge.svg)
