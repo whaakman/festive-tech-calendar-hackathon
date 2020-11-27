@@ -15,17 +15,25 @@
                 <th>Twitter</th>
                 <th>Email</th>
                 <th>Repository/Write up</th>
+                <th>Score Creativity</th>
+                <th>Score Technology</th>
+                <th>Score Write up</th>
             </tr>
         </thead>
         <tbody>
             
             @foreach (var signUp in signUpList)
             {
+                // add if submitted is true for reviewer, gray out boxes
                 <tr>
                     <td>@signUp.Name</td>
                     <td><a href="https://twitter.com/@signUp.TwitterAccount">@signUp.TwitterAccount</a></td>
                     <td>@signUp.Email</td>
                     <td><a href="@signUp.SolutionUri">@signUp.SolutionUri</a></td>
+                    <td><input type="text" name="scoreCreativity" @bind-value="signUp.ScoreCreativity"></td>
+                    <td><input type="text" name="scoreTechnology" @bind-value="signUp.ScoreTechnology"></td>
+                    <td><input type="text" name="scoreWriteUp" @bind-value="signUp.ScoreWriteUp"></td>
+                    <td><button @onclick="submitScores">Add Score</button></td>
                 </tr>
             }
         </tbody>
@@ -42,6 +50,12 @@
     protected override async Task OnInitializedAsync()
     {
         signUpList = await contributions.GetSignUpsFromFunction();
+    }
+
+    private void submitScores()
+    {
+        // handle submit
+
     }
     
 }
