@@ -108,6 +108,13 @@ footer {
   font-size: 12px;
   margin: 10px 5px;
 }
+.imagereviewers
+{
+  width: 150px; /* Width of new image */
+  height: 150px; /* Height of new image */
+  float: left;
+  margin: 0px 15px 15px 0px;
+}
 
 .red {
   color: #de2f32;
